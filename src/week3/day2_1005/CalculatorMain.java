@@ -1,4 +1,4 @@
-package week3.day2_1003;
+package week3.day2_1005;
 
 public class CalculatorMain {
     public static void main(String[] args) {
