@@ -1,4 +1,4 @@
-package week3.day2_1005;
+package week3.day2_1005.calculator0;
 
 public class Calculator {
 
