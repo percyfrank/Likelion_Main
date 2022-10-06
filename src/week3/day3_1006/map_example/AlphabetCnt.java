@@ -12,8 +12,12 @@ public class AlphabetCnt {
         AlphabetCnt alphabetCnt = new AlphabetCnt();
 
         for(int i = 0; i < s.length(); i++){
-            if(!(alphabetCnt.isAlphabet(s.charAt(i)) == true))
+            if(alphabetCnt.isAlphabet(s.charAt(i)) == true) {
+
+            } else {
                 System.out.println("알파벳이 아닙니다.");
+                break;
+            }
         }
 
     }
@@ -21,7 +25,7 @@ public class AlphabetCnt {
 
     public boolean isAlphabet(char c) {
 
-        if((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+        if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
             return true;
         else
             return false;
