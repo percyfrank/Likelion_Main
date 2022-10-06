@@ -19,7 +19,7 @@ public class ReadFileOne {
                 16 * 1024
         );
         for(int i = 1; i < n; i++) {
-            System.out.println((char) br.read());
+            System.out.print((char) br.read());
         }
         return (char)br.read();
     }
