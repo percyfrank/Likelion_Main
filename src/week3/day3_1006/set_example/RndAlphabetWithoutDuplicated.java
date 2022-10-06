@@ -9,7 +9,6 @@ public class RndAlphabetWithoutDuplicated {
         NumberGenerator randomAlphabetGenerator = new RandomAlphabetGenerator();
 
 //        HashSet<Integer> studentsWithoutDuplicated = new HashSet<>();
-//        HashSet<Character> alphabetWithoutDuplicated = new HashSet<>();
         HashSet<Character> alphabetWithoutDuplicated = new HashSet<>();
 
 
