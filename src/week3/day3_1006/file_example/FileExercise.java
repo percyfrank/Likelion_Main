@@ -14,7 +14,8 @@ public class FileExercise {
         File dir = new File("./");
         File files[] = dir.listFiles();
         for(File file : files)
-            System.out.println(file);
+            System.out.println(file
+            );
 
     }
 }
