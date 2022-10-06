@@ -93,10 +93,11 @@ public class MapExercise {
         map.put("황하준","https://github.com/lay423/java-project");
 
 
-        Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();
+        Iterator it = map.entrySet().iterator();
 
         while(it.hasNext()) {
-            System.out.println(it.next());
+            Map.Entry entry = (Map.Entry)it.next();
+            System.out.println(entry.getKey() + " : " + entry.getValue());
         }
 
     }
