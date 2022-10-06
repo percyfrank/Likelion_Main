@@ -18,3 +18,13 @@ public class FileExercise {
 
     }
 }
+/** 결과 출력
+ * .\.git
+ * .\.gitignore
+ * .\.idea
+ * .\aa_file.txt
+ * .\a_file.txt
+ * .\like-lion.iml
+ * .\out
+ * .\src
+ */
