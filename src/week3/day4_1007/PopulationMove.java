@@ -1,9 +1,8 @@
 package week3.day4_1007;
 
 public class PopulationMove {
-    private int fromSido;
-    private int toSido;
-
+    private int fromSido; //전출
+    private int toSido; //전입
 
     // 생성자 추가
     public PopulationMove(int fromSido, int toSido) {
@@ -20,4 +19,11 @@ public class PopulationMove {
         return toSido;
     }
 
+    public void setFromSido(int fromSido) {
+        this.fromSido = fromSido;
+    }
+
+    public void setToSido(int toSido) {
+        this.toSido = toSido;
+    }
 }
