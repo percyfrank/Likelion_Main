@@ -10,9 +10,15 @@ public class ReadFile {
         Scanner sc = new Scanner(System.in);
         int addnum = sc.nextInt();
 
+        //원하는 글자만큼 파일에서 읽기
         ReadFileOne readFileOne = new ReadFileOne("./aa_file.txt",addnum);
         char c = (char) readFileOne.readOneByte();
         System.out.println(c);
+
+//        //파일에서 라인별로 읽기
+//        ReadFileByLine readFileByLine = new ReadFileByLine("./bb_file.txt");
+
+
 
     }
 

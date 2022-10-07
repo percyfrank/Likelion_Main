@@ -15,7 +15,7 @@ public class ReadFileOne {
 
     char readOneByte() throws IOException {
         BufferedReader br = new BufferedReader(
-                new FileReader(filename),
+                new FileReader(this.filename),
                 16 * 1024
         );
         for(int i = 1; i < n; i++) {
