@@ -4,18 +4,25 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class SumOfDigit {
+
+    public static int solution(int n) {
+
+        int sum = 0;
+
+        while(n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+
+        return sum;
+    }
+
     public static void main(String[] args) throws Exception {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        String n = br.readLine();
-
-        int sum = 0;
-        for(int i = 0; i < n.length(); i++) {
-            sum += Integer.parseInt(String.valueOf(n.charAt(i)));
-        }
-
-        System.out.println(sum);
+        int result = solution(Integer.parseInt(br.readLine()));
+        System.out.println(result);
     }
 
 }
