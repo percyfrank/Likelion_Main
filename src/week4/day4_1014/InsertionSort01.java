@@ -1,6 +1,7 @@
 package week4.day4_1014;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class InsertionSort01 {
     public int[] sort(int[] arr) {
@@ -20,7 +21,14 @@ public class InsertionSort01 {
     }
     
     public static void main(String[] args) {
-        int[] arr = {8, 5, 6, 2, 4};
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
 
         InsertionSort01 is = new InsertionSort01();
         int[] result = is.sort(arr);
