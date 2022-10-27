@@ -3,7 +3,7 @@ package main.week5.day22_1021;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import week5.day22_1021.SolveBracket;
+import week5.day21_1021.SolveBracket;
 
 
 class SolveBracketTest {
