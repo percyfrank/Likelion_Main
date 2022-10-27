@@ -1,6 +1,4 @@
-package week6.day24_1025;
-
-import java.util.HashMap;
+package week6.day23_1025;
 
 public class HashFunction {
     public int hash(String key) {

@@ -1,37 +1,35 @@
-package week6.day24_1025;
+package week6.day23_1025;
 
-import java.util.HashSet;
-
-public class HashTable {
+public class HashTable2 {
 
     private int size = 10000;
     private int[] table = new int[size];
 
-    public HashTable() {
+    public HashTable2() {
     }
 
-    public HashTable(int size) {
+    public HashTable2(int size) {
         this.size = size;
         this.table = new int[size];
     }
 
     public int hash(String key) {
-        int asciiSum = 0;
+        int asciiSum  = 0;
         for (int i = 0; i < key.length(); i++) {
             asciiSum += key.charAt(i);
         }
         return asciiSum % size;
     }
 
-    public void insert(String key, Integer value) {
+    public void insert(String key,int value) {
         int hashCode = hash(key);
         this.table[hashCode] = value;
-        System.out.println(key + " " + hashCode + "번 방에 저장이 완료 되었습니다.");
     }
 
     public int search(String key) {
         return this.table[hash(key)];
     }
+
 
     public static void main(String[] args) {
         String[] names = new String[]{"DongyeonKang",
@@ -53,21 +51,12 @@ public class HashTable {
                 "AyeongChoi", "GeonjooHan", "JinhyuckHeo", "MinwooHwang", "SieunHwang",
                 "JunhaHwang"};
 
-        HashTable ht = new HashTable(200);
+        HashTable2 ht = new HashTable2();
         for (int i = 0; i < names.length; i++) {
-            ht.insert(names[i],ht.hash(names[i]));
+            ht.insert(names[i], ht.hash(names[i]));
         }
 
-        System.out.println(ht.search("DongyeonKang"));
+        System.out.println(ht.search("ohsukKwon"));
         System.out.println(ht.search("JiyoungAhn"));
-
-//        HashSet<Integer> nameSet = new HashSet<>();
-//        for (int i = 0; i < names.length; i++) {
-//            int hashValue = ht.hash(names[i]);
-//            System.out.println(hashValue);
-//            nameSet.add(ht.hash(names[i]));
-//
-//        }
-//        System.out.printf("%d %d", names.length,nameSet.size());
     }
 }

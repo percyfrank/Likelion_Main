@@ -1,9 +1,7 @@
-package week6.day25_1026;
+package week6.day24_1026;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class HashTableWithNoDuplicate {
     // 내부 클래스 추가
