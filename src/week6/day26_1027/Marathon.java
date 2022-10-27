@@ -20,7 +20,7 @@ public class Marathon {
 
         String answer = "";
         for (String s : completion) {
-            map.put(s, map.getOrDefault(s, 0) - 1);
+            map.put(s, map.get(s) - 1);
         }
 
         Set set = map.entrySet();
