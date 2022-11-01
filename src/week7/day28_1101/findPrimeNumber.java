@@ -9,7 +9,7 @@ public class findPrimeNumber {
         for (int i = 2; i < Math.sqrt(n) + 1; i++) {
             if (arr[i] == 0) {
                 int j = 2;
-                while (j * i <= n) {
+                while (i * j <= n) {
                     arr[i * j] = 1;
                     j++;
                 }
