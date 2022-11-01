@@ -3,16 +3,25 @@ package week7.day28_1101;
 public class findPrimeNumber {
     public int solution(int n) {
 
-        int answer = 1;
+        int[] arr = new int[n + 1];
+        int answer = 0;
 
-        boolean flag = false;
-        for (int i = 2; i <= n; i++) {
-            for (int j = 2; j < Math.sqrt(i) + 1; j++) {
-                if(i % j == 0) flag = true;
+        for (int i = 2; i < Math.sqrt(n) + 1; i++) {
+            if (arr[i] == 0) {
+                int j = 2;
+                while (j * i <= n) {
+                    arr[i * j] = 1;
+                    j++;
+                }
             }
-            if(!flag) answer++;
-            flag = false;
         }
+
+        for (int i = 2; i < n + 1; i++) {
+            if(arr[i] == 0) {
+                answer++;
+            }
+        }
+
         return answer;
     }
 
