@@ -25,7 +25,6 @@ public class RemoveMultipleOf {
         return answer;
     }
 
-
         public static void main(String[] args) {
         RemoveMultipleOf rmo = new RemoveMultipleOf();
         System.out.println(rmo.solution(13));
