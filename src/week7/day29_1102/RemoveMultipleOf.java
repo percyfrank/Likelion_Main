@@ -1,24 +1,28 @@
 package week7.day29_1102;
 
+import java.util.Arrays;
+
 public class RemoveMultipleOf {
     public int solution(int n) {
         int answer = 0;
-        int[] arr = new int[n + 1];
-        arr[0] = 1;
-        arr[1] = 1;
+        boolean[] isPrime = new boolean[n + 1];
+        Arrays.fill(isPrime,true);
+        // 0과 1은 소수 아님
+        isPrime[0] = false;
+        isPrime[1] = false;
 
         for (int i = 2; i < Math.sqrt(n) + 1 ; i++) {
-            if(arr[i] == 0) {
+            if(isPrime[i]) {
                 int j = 2;
                 while(i * j <= n) {
-                    arr[i * j] = 1;
+                    isPrime[i * j] = false;
                     j++;
                 }
             }
         }
 
-        for(int i : arr) {
-            if(i == 0)
+        for(boolean flag : isPrime) {
+            if(flag)
                 answer++;
         }
 
