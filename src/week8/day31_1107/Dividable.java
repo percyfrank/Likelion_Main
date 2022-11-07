@@ -1,10 +1,10 @@
-package week8;
+package week8.day31_1107;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class day31_1107_Dividable {
+public class Dividable {
     public static int[] solution(int[] arr, int divisor) {
 
         ArrayList<Integer> list = new ArrayList<Integer>();
