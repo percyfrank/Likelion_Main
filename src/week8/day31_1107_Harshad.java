@@ -20,8 +20,8 @@ public class day31_1107_Harshad {
     public static void main(String[] args) {
         day31_1107_Harshad d = new day31_1107_Harshad();
         System.out.println(d.solution(10));
-        System.out.println(d.solution(12));
         System.out.println(d.solution(11));
+        System.out.println(d.solution(12));
         System.out.println(d.solution(13));
     }
 
