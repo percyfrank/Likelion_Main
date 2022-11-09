@@ -1,26 +1,23 @@
 package week8.day33_1109;
 
 import java.util.Arrays;
-
-interface StatementStrategy {
-    boolean apply(int a, int b);
-}
+import java.util.function.BiFunction;
 
 public class Insertionsort {
 
-    public static int[] sort(int[] arr,StatementStrategy stmt) {
+    public static int[] sort(int[] arr, BiFunction<Integer,Integer,Boolean> stmt) {
 
         for (int i = 0; i < arr.length - 1; i++) {
-            int idx = i;
+            int swapIdx = i;
 
             int tmp = 0;
             for (int j = i+1; j < arr.length; j++) {
-                if(stmt.apply(arr[idx],arr[j])) {
-                    idx = j;
+                if(stmt.apply(arr[swapIdx],arr[j])) {
+                    swapIdx = j;
                 }
             }
-            tmp = arr[idx];
-            arr[idx] = arr[i];
+            tmp = arr[swapIdx];
+            arr[swapIdx] = arr[i];
             arr[i] = tmp;
         }
         return arr;
