@@ -38,7 +38,8 @@ public class QuickSort2 {
     public static void main(String[] args) {
         Runtime.getRuntime().gc();
         long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        System.out.println(usedMemory + " bytes");
+        System.out.printf("startMemory : " + usedMemory + " bytes\n");
+        System.out.println("--------------------------------");
 
         long startTime = System.nanoTime();
         var arr = new int[]{20, 18, 5, 19, 5, 25, 40, 50};
@@ -57,6 +58,7 @@ public class QuickSort2 {
 
         Runtime.getRuntime().gc();
         long usedMemory1 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        System.out.println(usedMemory1 + " bytes");
+        System.out.println("--------------------------------");
+        System.out.println("finishMemory : " + usedMemory1 + " bytes\n");
     }
 }

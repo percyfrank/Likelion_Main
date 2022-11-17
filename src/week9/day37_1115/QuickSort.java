@@ -8,7 +8,7 @@ public class QuickSort {
 
         if(start >= end) return arr;
 
-        int pivot = start;
+        int pivot = start;  // 피벗을 제일 앞에서부터 시작
         int left = start + 1;
         int right = end;
 
@@ -25,6 +25,7 @@ public class QuickSort {
                 arr[right] = arr[left];
                 arr[left] = tmp;
             }
+            System.out.println(Arrays.toString(arr));
         }
         quickSort(arr, start,right-1);                                  // 피벗을 기준으로 왼쪽 부분 정렬
         quickSort(arr, right+1,end);                                    // 피벗을 기준으로 오른쪽 부분 정렬
@@ -34,7 +35,8 @@ public class QuickSort {
     public static void main(String[] args) {
         Runtime.getRuntime().gc();
         long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        System.out.println(usedMemory + " bytes");
+        System.out.printf("startMemory : " + usedMemory + " bytes\n");
+        System.out.println("--------------------------------");
 
         long startTime = System.nanoTime();
         var arr = new int[]{20, 18, 5, 19, 5, 25, 40, 50};
@@ -49,7 +51,8 @@ public class QuickSort {
 
         Runtime.getRuntime().gc();
         long usedMemory1 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        System.out.println(usedMemory1 + " bytes");
+        System.out.println("--------------------------------");
+        System.out.println("finishMemory : " + usedMemory1 + " bytes\n");
 
     }
 }
