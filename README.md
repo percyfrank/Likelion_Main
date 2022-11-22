@@ -1,8 +1,14 @@
 
 ## [11월]
+#### 22.11.22
+- [CodeUp] [1~n까지 합 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
+- List로 재귀 합
+- Array로 재귀 합
+- [CodeUp] [자릿수 합 구하기](https://codeup.kr/problem.php?id=1854&rid=0)
+#### 22.11.17
 #### 22.11.18
-- [Programmers] [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
-- [Programmers] [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
+- [프로그래머스] [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
+- [프로그래머스] [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
 #### 22.11.17
 - 퀵정렬 ver3
 #### 22.11.16
