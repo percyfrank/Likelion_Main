@@ -1,5 +1,13 @@
 
 ## [11월]
+#### 22.11.23
+- [CodeUp] [재귀로 * n개 한 줄로 출력하기](https://codeup.kr/problem.php?id=1851)
+- [CodeUp] [재귀로 1부터 n까지 한 줄로 출력하기](https://codeup.kr/problem.php?id=1852)
+- [CodeUp] [재귀로 1부터 n까지 합 리턴하기](https://codeup.kr/problem.php?id=1853)
+- [CodeUp] [재귀로 각 자리 수의 합 리턴하기](https://codeup.kr/problem.php?id=1854)
+- [CodeUp] [재귀로 n번째 피보나치 수 리턴하기](https://codeup.kr/problem.php?id=1855)
+- [CodeUp] [계단 뛰어 오르기](https://codeup.kr/problem.php?id=1856)
+- [CodeUp] [팩토리얼 계산](https://codeup.kr/problem.php?id=1912)
 #### 22.11.22
 - [CodeUp] [1~n까지 합 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
 - List로 재귀 합
