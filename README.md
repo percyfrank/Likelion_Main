@@ -1,5 +1,15 @@
 
 ## [11월]
+#### 22.11.25
+- [CodeUp] [최대공약수 구하기](https://codeup.kr/problem.php?id=2623)
+  - array로 구현
+  - while로 구현
+  - 재귀로 구현
+- 꼬리 재귀
+#### 22.11.24
+- 재귀로 피보나치 수열
+- [CodeUp] [별 삼각형 출력하기](https://codeup.kr/problem.php?id=1859)
+- [CodeUp] [수 삼각형 출력하기](https://codeup.kr/problem.php?id=1860)
 #### 22.11.23
 - [CodeUp] [재귀로 * n개 한 줄로 출력하기](https://codeup.kr/problem.php?id=1851)
 - [CodeUp] [재귀로 1부터 n까지 한 줄로 출력하기](https://codeup.kr/problem.php?id=1852)
