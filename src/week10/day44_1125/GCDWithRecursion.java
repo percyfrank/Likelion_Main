@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class GCD_ver2 {
+public class GCDWithRecursion {
 
     /**
      * gcd(196, 42) = gcd(196 - 42, 42)
