@@ -205,7 +205,7 @@ public class PopulationStatistics {
         /**
          * heatmap 그리기 위한 메서드
          */
-        String address = "C:\\Users\\82104\\Desktop\\2021_인구관련연간자료_20221006_35421.csv";
+        String address = "C:\\Users\\82104\\Desktop\\교안\\3주차(221007) 2021년 인구 이동 현황\\2021_인구관련연간자료_20221006_35421.csv";
         PopulationStatistics ps = new PopulationStatistics();
 
         List<PopulationMove> pml = ps.readByFile(address);
