@@ -57,7 +57,6 @@ public class PopulationStatistics {
         int toSido = Integer.parseInt(strs[0]);
 
         return new PopulationMove(fromSido,toSido);
-
     }
 
     // 전입, 전출코드 parsing - 파일 단위
@@ -109,7 +108,6 @@ public class PopulationStatistics {
         return pm.getFromSido() +  "," + pm.getToSido() + "\n";
     }
 
-
     public Map<String,Integer> getDataToMap(List<PopulationMove> pml) {
 
         // String (전출,전입), 그 횟수가 Integer (value)에 저장된 map
@@ -147,83 +145,70 @@ public class PopulationStatistics {
         return map;
     }
 
-
     public static void main(String[] args) throws IOException {
+        /**
+         * 전입, 전출 코드를 from_to_exercise.txt에 저장하기
+         */
+        String address = "C:\\Users\\82104\\Desktop\\교안\\3주차(221007) 2021년 인구 이동 현황\\2021_인구관련연간자료_20221006_35421.csv";
+        PopulationStatistics ps = new PopulationStatistics();
+        List<PopulationMove> pml = ps.readByFile(address);
 
-//        String address = "C:\\Users\\82104\\Desktop\\2021_인구관련연간자료_20221006_35421.csv";
-//        PopulationStatistics ps = new PopulationStatistics();
+        ps.createAFile("from_to_exercise.txt");
 
-//        ps.readByChar(address);
-//        ps.readByLine(address);
-//        ps.readByLineImproved(address);
-//
-//        String data = "50,130,62000,2021,12,20,26,350,52000,1,1,027,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,528528";
-//        PopulationMove pm = ps.parse(data);
-//        System.out.println(pm.getFromSido());
-//        System.out.println(pm.getToSido());
-//
-//        System.out.println(pml.size());
-//
-//        /**
-//         * 파일 단위로 읽어서 parsing한 데이터
-//         */
-//
-//        ps.createAFile("from_to_exercise.txt");
-//
-//        // parsing한 데이터를 담기 위한 리스트
-//        ArrayList<String> strings = new ArrayList<>();
-//
-//        for(PopulationMove pm : pml) {
-//            System.out.printf("전출 : %s, 전입 : %s\n",pm.getFromSido(),pm.getToSido());
-//            strings.add(ps.dataToString(pm));
-//        }
-//
-//        ps.write(strings,"./from_to_exercise.txt");
+        // parsing한 데이터를 담기 위한 리스트
+        ArrayList<String> strings = new ArrayList<>();
 
-//        /**
-//         * 전출 -> 전입 횟수 세기
-//         */
-//        String address = "C:\\Users\\82104\\Desktop\\2021_인구관련연간자료_20221006_35421.csv";
-//        PopulationStatistics ps = new PopulationStatistics();
-//
-//        // 전입, 전출 코드만 parsing된 데이터
-//        List<PopulationMove> pml = ps.readByFile(address);
-//
-//        // key가 (전입,전출) 이고 그 횟수가 value에 저장된 map
-//        Map<String,Integer> map = ps.getDataToMap(pml);
-//
-//        ps.createAFile("./sido_cnt_exercise");
-//        String targetFile = "sido_cnt_exercise";
-//
-//        ArrayList<String> cntResult = new ArrayList<>();
-//        for(String key : map.keySet()) {
-//            String s = String.format("[전출->전입] : [%s], 횟수 : %d\n",key,map.get(key));
-//            cntResult.add(s);
-//        }
-//        ps.write(cntResult, targetFile);
+        for(PopulationMove pm : pml) {
+            System.out.printf("전출 : %s, 전입 : %s\n",pm.getFromSido(),pm.getToSido());
+            strings.add(ps.dataToString(pm));
+        }
+
+        ps.write(strings,"./from_to_exercise.txt");
+
+        /**
+         * 전출 -> 전입 횟수 세기
+         */
+        String address1 = "C:\\Users\\82104\\Desktop\\교안\\3주차(221007) 2021년 인구 이동 현황\\2021_인구관련연간자료_20221006_35421.csv";
+        PopulationStatistics ps1 = new PopulationStatistics();
+
+        // 전입, 전출 코드만 parsing된 데이터
+        List<PopulationMove> pmll = ps1.readByFile(address);
+
+        // key가 (전입,전출) 이고 그 횟수가 value에 저장된 map
+        Map<String,Integer> map = ps1.getDataToMap(pmll);
+
+        ps1.createAFile("./sido_cnt_exercise");
+        String targetFile = "sido_cnt_exercise";
+
+        ArrayList<String> cntResult = new ArrayList<>();
+        for(String key : map.keySet()) {
+            String s = String.format("[전출->전입] : [%s], 횟수 : %d\n",key,map.get(key));
+            cntResult.add(s);
+        }
+        ps1.write(cntResult, targetFile);
 
         /**
          * heatmap 그리기 위한 메서드
          */
-        String address = "C:\\Users\\82104\\Desktop\\교안\\3주차(221007) 2021년 인구 이동 현황\\2021_인구관련연간자료_20221006_35421.csv";
-        PopulationStatistics ps = new PopulationStatistics();
+        String address2 = "C:\\Users\\82104\\Desktop\\교안\\3주차(221007) 2021년 인구 이동 현황\\2021_인구관련연간자료_20221006_35421.csv";
+        PopulationStatistics ps2 = new PopulationStatistics();
 
-        List<PopulationMove> pml = ps.readByFile(address);
+        List<PopulationMove> pmlll = ps.readByFile(address2);
 
-        Map<String, Integer> map = ps.getDataToMap(pml);
+        Map<String, Integer> heatMap = ps.getDataToMap(pmlll);
 
-        ps.createAFile("./for_heatmap_exercise");
-        String targetFile = "for_heatmap_exercise";
+        ps.createAFile("./for_heatmap_exercise.txt");
+        String heatMapFile = "for_heatmap_exercise.txt";
 
-        List<String> strings = new ArrayList<>();
+        List<String> strings1 = new ArrayList<>();
         Map<String,Integer> sidoForHeatMap = ps.SidoCode();
-        for(String key : map.keySet()) {
+        for(String key : heatMap.keySet()) {
             String[] fromto = key.split(",");
-            String format = String.format("[%s, %s, %d]\n", sidoForHeatMap.get(fromto[0]),
-                    sidoForHeatMap.get(fromto[1]), map.get(key));
-            strings.add(format);
+            String format = String.format("[전출, 전입, 횟수] : [%s, %s, %d]\n", sidoForHeatMap.get(fromto[0]),
+                    sidoForHeatMap.get(fromto[1]), heatMap.get(key));
+            strings1.add(format);
         }
-        ps.write(strings,targetFile);
+        ps.write(strings,heatMapFile);
 
 
     }
