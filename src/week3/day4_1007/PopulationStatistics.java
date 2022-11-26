@@ -118,7 +118,6 @@ public class PopulationStatistics {
         return moveCntMap;
     }
 
-
     public static void main(String[] args) throws IOException {
 
         String address = "C:\\Users\\82104\\Desktop\\교안\\3주차(221007) 2021년 인구 이동 현황\\2021_인구관련연간자료_20221006_35421.csv";
@@ -150,7 +149,6 @@ public class PopulationStatistics {
         }
         populationStatistics.write(cntResult,sidoFileName);
 
-
         /**
          * heatmap 그리기 위한 txt파일 저장
          */
@@ -162,7 +160,5 @@ public class PopulationStatistics {
             result.add(s);
         }
         populationStatistics.write(result,heatMapFileName);
-
-
     }
 }
