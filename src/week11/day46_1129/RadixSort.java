@@ -1,9 +1,6 @@
 package week11.day46_1129;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Queue;
+import java.util.*;
 
 public class RadixSort {
 
@@ -37,8 +34,9 @@ public class RadixSort {
             queueArr[i] = new ArrayDeque<>();
         }
 
+        //자릿수에 맞게 queue에 넣기 1, 10, 100 ...
         for (int i = 0; i < arr.length; i++) {
-            int divisor = (int) Math.pow(10, digit - 1);
+            int divisor = (int) Math.pow(10, digit - 1);    // 1이면 일의자리, 2면 십의 자리, 3이면 백의 자리
             queueArr[Math.floorDiv(arr[i], divisor) % 10].add(arr[i]);
         }
 
@@ -57,14 +55,13 @@ public class RadixSort {
     public static void main(String[] args) {
 
         int[] arr = new int[]{7, 4, 5, 9, 1, 0, 20};
-        int[] max = getMax(arr);
-        System.out.println(Arrays.toString(max));
+        int[] digits = getMax(arr);
+        System.out.println(Arrays.toString(digits));
 //        System.out.println(Arrays.toString(arr));
 
-        for (int i : max) {
-            sort(arr, i);
+        for (int digit : digits) {
+            sort(arr, digit);
         }
-
 
     }
 }
