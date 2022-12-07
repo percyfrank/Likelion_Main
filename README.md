@@ -203,7 +203,27 @@ public class PopulationMove {
 
 </details>
 
+## [12월]
+
+#### 22.12.07
+- [프로그래머스] [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
+#### 22.12.06
+
+#### 22.12.05
+
+#### 22.12.02
+- [CodeUp] [소인수분해](https://codeup.kr/problem.php?id=4037)
+#### 22.12.01
+- [프로그래머스] [명예의 전당(1)](https://school.programmers.co.kr/learn/courses/30/lessons/138477?language=java)
 ## [11월]
+#### 22.11.30
+- [CodeUp] [(재귀함수) 두 노드간의 거리](https://codeup.kr/problem.php?id=1936)
+- [프로그래머스] [약수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/12928)
+- [프로그래머스] [문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916)
+#### 22.11.29
+- 기수정렬
+#### 22.11.28
+- A 부터 Z까지 출력하기
 #### 22.11.25
 - [CodeUp] [최대공약수 구하기](https://codeup.kr/problem.php?id=2623)
   - array로 구현
