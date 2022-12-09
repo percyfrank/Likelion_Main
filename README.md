@@ -204,9 +204,13 @@ public class PopulationMove {
 </details>
 
 ## [12월]
+#### 22.12.09
+- [BAEKJOON] [LCS](https://www.acmicpc.net/problem/9251)
+- [CodeUp] [사투리](https://codeup.kr/problem.php?id=2699)
+#### 22.12.08
 
 #### 22.12.07
-- [프로그래머스] [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
+- [Programmers] [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
 #### 22.12.06
 
 #### 22.12.05
@@ -214,12 +218,12 @@ public class PopulationMove {
 #### 22.12.02
 - [CodeUp] [소인수분해](https://codeup.kr/problem.php?id=4037)
 #### 22.12.01
-- [프로그래머스] [명예의 전당(1)](https://school.programmers.co.kr/learn/courses/30/lessons/138477?language=java)
+- [Programmers] [명예의 전당(1)](https://school.programmers.co.kr/learn/courses/30/lessons/138477?language=java)
 ## [11월]
 #### 22.11.30
 - [CodeUp] [(재귀함수) 두 노드간의 거리](https://codeup.kr/problem.php?id=1936)
-- [프로그래머스] [약수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/12928)
-- [프로그래머스] [문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916)
+- [Programmers] [약수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/12928)
+- [Programmers] [문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916)
 #### 22.11.29
 - 기수정렬
 #### 22.11.28
@@ -249,8 +253,8 @@ public class PopulationMove {
 - [CodeUp] [자릿수 합 구하기](https://codeup.kr/problem.php?id=1854&rid=0)
 #### 22.11.17
 #### 22.11.18
-- [프로그래머스] [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
-- [프로그래머스] [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
+- [Programmers] [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
+- [Programmers] [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
 #### 22.11.17
 - 퀵정렬 ver3
 #### 22.11.16
@@ -260,50 +264,50 @@ public class PopulationMove {
 #### 22.11.14
 - 에라토스테네스의 체
 #### 22.11.11
-- [프로그래머스] [비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
+- [Programmers] [비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
   - 단순 구현
   - ver2 - 다른 풀이
   - ver3 - 비트 연산으로 구현
 #### 22.11.10
-- [프로그래머스] [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
+- [Programmers] [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
     - stack 사용, 안 사용하는 방법(미완)
-- [프로그래머스] [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586)(미완)
+- [Programmers] [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586)(미완)
 #### 22.11.09
 - 선택정렬(Bifunction)
 - 선택정렬(템플릿 콜백)
 - 선택정렬(그냥 구현)
 #### 22.11.08
-- [코드업] 데이터 탐색 https://codeup.kr/problem.php?id=3001
+- [CodeUp] 데이터 탐색 https://codeup.kr/problem.php?id=3001
 - 이진 탐색 구현
 #### 22.11.07
-- [프로그래머스] [하샤드 수](https://school.programmers.co.kr/learn/courses/30/lessons/12947)
-- [프로그래머스] [나누어 떨어지는 숫자 배열](https://school.programmers.co.kr/learn/courses/30/lessons/12910)
+- [Programmers] [하샤드 수](https://school.programmers.co.kr/learn/courses/30/lessons/12947)
+- [Programmers] [나누어 떨어지는 숫자 배열](https://school.programmers.co.kr/learn/courses/30/lessons/12910)
     - 배열로 구현
     - 우선순위 큐로 구현
 #### 22.11.02 ~ 11.03
 - 에라토스테네스의 체
 #### 22.11.01
-  - [프로그래머스] [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12921)
+  - [Programmers] [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12921)
     - 단순 구현
     - 에라토스테네스의 체로 구현
     - 템플릿 콜백
 
 ## [10월]
 #### 22.10.31
-- [프로그래머스] [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840)
+- [Programmers] [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840)
 #### 22.10.28
-- [프로그래머스] [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)
-- [프로그래머스] [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
+- [Programmers] [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)
+- [Programmers] [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
 #### 22.10.27
-- [프로그래머스] [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
+- [Programmers] [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
 #### 22.10.26
 - 해시 충돌 해결
 #### 22.10.25
 - 해시 테이블, 해시 함수 구현
 #### 22.10.24
-- [프로그래머스] [K번째 수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+- [Programmers] [K번째 수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
 #### 22.10.21
-- [프로그래머스] [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+- [Programmers] [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
   - 괄호 풀기, 스택 활용
 #### 22.10.20
 - Stack isEmpty(), peek() 구현 및 테스트 코드 작성
@@ -322,13 +326,13 @@ public class PopulationMove {
 - 여러 개의 자연수 중 최댓값 찾기
   - 인터페이스 이용한 방법
 #### 22.10.11
-- [프로그래머스] [자릿수 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/12931)
+- [Programmers] [자릿수 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/12931)
 #### 22.10.06
-- [코드업] 1021 ~ 1030
+- [CodeUp] 1021 ~ 1030
 - 랜덤한 숫자 중복 제거
 - 랜덤한 알파벳 중복 제거
 #### 22.10.05
-- [코드업] 1011 ~ 1020
+- [CodeUp] 1011 ~ 1020
 - List에 90명 이름 넣고 출력
 #### 22.10.04
 - 짝수,홀수 출력
