@@ -204,6 +204,9 @@ public class PopulationMove {
 </details>
 
 ## [12월]
+#### 22.12.12
+- 최소 비용 경로
+
 #### 22.12.09
 - [BAEKJOON] [LCS](https://www.acmicpc.net/problem/9251)
 - [CodeUp] [사투리](https://codeup.kr/problem.php?id=2699)
@@ -228,6 +231,7 @@ public class PopulationMove {
 - 기수정렬
 #### 22.11.28
 - A 부터 Z까지 출력하기
+- [Programmers] [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839)
 #### 22.11.25
 - [CodeUp] [최대공약수 구하기](https://codeup.kr/problem.php?id=2623)
   - array로 구현
